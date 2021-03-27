@@ -7,7 +7,7 @@ add_global_arguments(compiler_flags, language : 'cpp')
 gtest_dep = dependency('gtest')
 src_dir = include_directories('src')
 
-sudoku_solver_test = executable('parser_test', 'test/test.cpp', dependencies : gtest_dep, include_directories : src_dir)
+sudoku_solver_test = executable('sudoku_solver_test', 'test/test.cpp', dependencies : gtest_dep, include_directories : src_dir)
 # executable('parser', 'src/main.cpp')
 
 test('sudoku_solver_test', sudoku_solver_test)
